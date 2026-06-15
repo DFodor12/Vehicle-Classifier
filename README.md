@@ -7,8 +7,6 @@
 
 Acest proiect conține o implementare completă a unui classifier de imagini pentru **20 de tipuri diferite de vehicule**, utilizând arhitectura **ResNet-18** pre-antrenată în PyTorch și adaptată prin tehnici de *transfer learning* (fine-tuning). Modelul final obține o acuratețe remarcabilă de **98%** pe setul de validare.
 
-Proiectul a fost dezvoltat ca parte a activității academice pentru disciplina **Securitatea Informației (SI)**, Facultatea de Automatică și Calculatoare (Anul 3, Semestrul 2).
-
 ---
 
 ## 🌟 Caracteristici Cheie
@@ -57,33 +55,6 @@ dataset/
 * **Număr total imagini:** 3680 de imagini.
 * **Split antrenare/validare:** 80% antrenare (2944 imagini) | 20% validare (736 imagini).
 * **Rezoluție imagini input:** Redimensionate la $224 \times 224$ pixeli.
-
----
-
-## 🛠️ Instalare și Configurare
-
-Pentru a rula notebook-ul local, urmează pașii de mai jos:
-
-### 1. Clonarea Depozitului
-```bash
-git clone https://github.com/utilizator/Proiect_DeepLearning_Masini.git
-cd Proiect_DeepLearning_Masini
-```
-
-### 2. Crearea și Activarea unui Mediu Virtual (Recomandat)
-Pe Windows (PowerShell):
-```powershell
-python -m venv venv
-.\venv\Scripts\Activate.ps1
-```
-
-### 3. Instalarea Dependențelor
-Instalează bibliotecile necesare rulării modelului:
-```bash
-pip install torch torchvision matplotlib scikit-learn numpy tqdm pillow ipywidgets
-```
-
-*Notă: Dacă ai o placă grafică dedicată NVIDIA, asigură-te că instalezi versiunea de PyTorch cu suport CUDA corespunzătoare pentru accelerare GPU.*
 
 ---
 
